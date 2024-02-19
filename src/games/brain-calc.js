@@ -26,7 +26,7 @@ const calculateExpression = (num1, operator, num2) => {
 const runGame = () => {
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${name}!\n`);
+  console.log(`Hello, ${name}!`);
 
   console.log('Answer the questions:');
   let correctAnswersCount = 0;
