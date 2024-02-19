@@ -7,7 +7,11 @@ brain-games:
 publish:
 	npm publish --dry-run
 
-make lint:
+lint:
 	npx eslint .
-	
 
+lint-fix:
+	npx eslint --fix .
+	
+brain-calc:
+	node bin/brain-calc.js
