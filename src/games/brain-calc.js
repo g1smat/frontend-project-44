@@ -27,7 +27,6 @@ const runGame = () => {
   console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
-
   console.log('Answer the questions:');
   let correctAnswersCount = 0;
 
@@ -43,7 +42,7 @@ const runGame = () => {
 
     const correctAnswer = calculateExpression(num1, operator, num2);
     if (Number(userAnswer) === correctAnswer) {
-      console.log('Correct!\n');
+      console.log('Correct!');
       correctAnswersCount += 1;
     } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
